@@ -1,0 +1,32 @@
+10
+10
+10
+10
+Tyre Num?
+Tyre Num?
+Tyre Num?
+Tyre Num?
+1,8 bar
+2,0 bar
+1,9 bar
+1,7 bar
+Temp ?
+Temp ?
+Temp ?
+Temp ?
+2,4 bar
+2,4 bar
+2,4 bar
+2,4 bar
+80 deg C
+80 deg C
+80 deg C
+80 deg C
+250 kg
+250 kg
+250 kg
+250 kg
+-2 mm
+-2 mm
+-2 mm
+-2 mm

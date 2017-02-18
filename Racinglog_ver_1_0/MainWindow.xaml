@@ -1,0 +1,89 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Racinglog_ver_1_0.MainWindow"
+        Title="Race Log" Height="560.125" Width="700.522">
+    <Grid Margin="4,0,-3.6,0.2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="78*"/>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="146*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="18.6,163,20.6,154.6" Source="Resources\Abarth_bild.png" Grid.Column="2"/>
+        <TextBox x:Name="LeftFrontSuspensionClick" HorizontalAlignment="Left" Height="22" Margin="2.4,55,0,0" TextWrapping="Wrap" Text="Click" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontSuspensionClick_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="LeftRearSuspensionClick" HorizontalAlignment="Left" Height="22" Margin="2.4,307,0,0" TextWrapping="Wrap" Text="Click" VerticalAlignment="Top" Width="72" TextChanged="LeftRearSuspensionClick_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="RightRearSuspensionClick" HorizontalAlignment="Left" Height="22" Margin="3.4,307,0,0" TextWrapping="Wrap" Text="Click" VerticalAlignment="Top" Width="72" TextChanged="LeftRearSuspensionClick_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontSuspensionClick" HorizontalAlignment="Left" Height="22" Margin="3.4,55,0,0" TextWrapping="Wrap" Text="Click" VerticalAlignment="Top" Width="72" TextChanged="RightFrontSuspensionClick_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="Printout" HorizontalAlignment="Left" Height="336" Margin="26.2,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" TextChanged="Printout_TextChanged" Grid.Column="5"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="33.2,425,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Load" Grid.Column="5" ToolTip="Press to load basic setup"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="33.2,450,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Reset" Grid.Column="5"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="33.2,476,0,-14.4" VerticalAlignment="Top" Width="75" Click="Button_Click_Save" Grid.Column="5"/>
+        <Label Content="Click suspension" HorizontalAlignment="Left" Margin="23,51,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftFrontTyreNum" HorizontalAlignment="Left" Height="22" Margin="2.4,79,0,0" TextWrapping="Wrap" Text="num" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontTyreNum_TextChanged" Grid.Column="1"/>
+        <Label Content="Tyre number" HorizontalAlignment="Left" Margin="23,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftFrontColdPressure" HorizontalAlignment="Left" Height="22" Margin="2.4,103,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontColdPressure_TextChanged" Grid.Column="1"/>
+        <Label Content="Cold tyre pressure" HorizontalAlignment="Left" Margin="23,99,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftFrontColdTemp" HorizontalAlignment="Left" Height="22" Margin="2.4,128,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontColdTemp_TextChanged" Grid.Column="1"/>
+        <Label Content="Cold tyre temp" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftFrontWarmPressure" HorizontalAlignment="Left" Height="22" Margin="2.4,152,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontWarmPressure_TextChanged" Grid.Column="1"/>
+        <Label Content="Warm tyre pressure" HorizontalAlignment="Left" Margin="23,148,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="LeftFrontWarmTemp" HorizontalAlignment="Left" Height="22" Margin="2.4,176,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontWarmTemp_TextChanged" Grid.Column="1"/>
+        <Label Content="Warm tyre temp" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftFrontCornerWeight" HorizontalAlignment="Left" Height="22" Margin="2.4,200,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontCornerWeight_TextChanged" Grid.Column="1"/>
+        <Label Content="Corner weigh" HorizontalAlignment="Left" Margin="23,196,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftFrontToeIn" HorizontalAlignment="Left" Height="22" Margin="2.4,224,0,0" TextWrapping="Wrap" Text="mm" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontToeIn_TextChanged" Grid.Column="1"/>
+        <Label Content="Toe in" HorizontalAlignment="Left" Margin="23,220,0,0" VerticalAlignment="Top"/>
+        <Label Content="Click suspension" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftRearTyreNum" HorizontalAlignment="Left" Height="22" Margin="2.4,331,0,0" TextWrapping="Wrap" Text="Num" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontTyreNum_TextChanged" Grid.Column="1"/>
+        <Label Content="Tyre number" HorizontalAlignment="Left" Margin="23,327,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftRearColdPressure" HorizontalAlignment="Left" Height="22" Margin="2.4,355,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="LeftRearColdPressure_TextChanged" Grid.Column="1"/>
+        <Label Content="Cold tyre pressure" HorizontalAlignment="Left" Margin="23,351,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftRearColdTemp" HorizontalAlignment="Left" Height="22" Margin="2.4,380,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="LeftRearColdTemp_TextChanged" Grid.Column="1"/>
+        <Label Content="Cold tyre temp" HorizontalAlignment="Left" Margin="23,376,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftRearWarmPressure" HorizontalAlignment="Left" Height="22" Margin="2.4,404,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="LeftRearWarmPressure_TextChanged" Grid.Column="1"/>
+        <Label Content="Warm tyre pressure" HorizontalAlignment="Left" Margin="23,400,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="LeftRearWarmTemp" HorizontalAlignment="Left" Height="22" Margin="2.4,428,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="LeftRearWarmTemp_TextChanged" Grid.Column="1"/>
+        <Label Content="Warm tyre temp" HorizontalAlignment="Left" Margin="23,424,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftRearCornerWeight" HorizontalAlignment="Left" Height="22" Margin="2.4,452,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="72" TextChanged="LeftRearCornerWeight_TextChanged" Grid.Column="1"/>
+        <Label Content="Corner weight" HorizontalAlignment="Left" Margin="23,448,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LeftRearToeIn" HorizontalAlignment="Left" Height="22" Margin="2.4,476,0,-17.4" TextWrapping="Wrap" Text="mm" VerticalAlignment="Top" Width="72" TextChanged="LeftRearToeIn_TextChanged" Grid.Column="1"/>
+        <Label Content="Toe in" HorizontalAlignment="Left" Margin="23,472,0,-17.4" VerticalAlignment="Top"/>
+        <TextBox x:Name="RightFrontTyreNum" HorizontalAlignment="Left" Height="22" Margin="3.4,79,0,0" TextWrapping="Wrap" Text="num" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontTyreNum_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontColdPressure" HorizontalAlignment="Left" Height="22" Margin="3.4,103,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="RightFrontColdPressure_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontColdTemp" HorizontalAlignment="Left" Height="22" Margin="3.4,128,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="RightFrontColdTemp_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontWarmPressure" HorizontalAlignment="Left" Height="22" Margin="3.4,152,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="RightFrontWarmPressure_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontWarmTemp" HorizontalAlignment="Left" Height="22" Margin="3.4,176,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="RightFrontWarmTemp_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontCornerWeight" HorizontalAlignment="Left" Height="22" Margin="3.4,200,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="72" TextChanged="RightFrontCornerWeight_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightFrontToeIn" HorizontalAlignment="Left" Height="22" Margin="3.4,224,0,0" TextWrapping="Wrap" Text="mm" VerticalAlignment="Top" Width="72" TextChanged="RightFrontToeIn_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearTyreNum" HorizontalAlignment="Left" Height="22" Margin="3.4,331,0,0" TextWrapping="Wrap" Text="Num" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontTyreNum_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearColdPressure" HorizontalAlignment="Left" Height="22" Margin="3.4,355,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="RightRearColdPressure_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearColdTemp" HorizontalAlignment="Left" Height="22" Margin="3.4,380,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="RightRearColdTemp_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearWarmPressure" HorizontalAlignment="Left" Height="22" Margin="3.4,404,0,0" TextWrapping="Wrap" Text="bar" VerticalAlignment="Top" Width="72" TextChanged="RightRearWarmPressure_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearWarmTemp" HorizontalAlignment="Left" Height="22" Margin="3.4,428,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="72" TextChanged="LeftFrontColdPressure_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearCornerWeight" HorizontalAlignment="Left" Height="22" Margin="3.4,452,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="72" TextChanged="RightRearCornerWeight_TextChanged" Grid.Column="3"/>
+        <TextBox x:Name="RightRearToeIn" HorizontalAlignment="Left" Height="22" Margin="3.4,476,0,-17.4" TextWrapping="Wrap" Text="mm" VerticalAlignment="Top" Width="72" TextChanged="RightRearToeIn_TextChanged" Grid.Column="3"/>
+        <Label Content="Click suspension" HorizontalAlignment="Left" Margin="73.4,51,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Tyre number" HorizontalAlignment="Left" Margin="73.4,75,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Cold tyre pressure" HorizontalAlignment="Left" Margin="73.4,99,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Cold tyre temp" HorizontalAlignment="Left" Margin="73.4,124,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Warm tyre pressure" HorizontalAlignment="Left" Margin="73.4,148,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Warm tyre temp" HorizontalAlignment="Left" Margin="73.4,172,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Corner weight" HorizontalAlignment="Left" Margin="73.4,196,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Toe in" HorizontalAlignment="Left" Margin="73.4,220,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Click suspension" HorizontalAlignment="Left" Margin="73.4,303,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Tyre number" HorizontalAlignment="Left" Margin="73.4,327,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Cold tyre pressure" HorizontalAlignment="Left" Margin="73.4,351,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Cold tyre temp" HorizontalAlignment="Left" Margin="73.4,376,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Warm tyre pressure" HorizontalAlignment="Left" Margin="73.4,400,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Warm tyre temp" HorizontalAlignment="Left" Margin="73.4,424,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Corner weight" HorizontalAlignment="Left" Margin="73.4,448,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Label Content="Toe in" HorizontalAlignment="Left" Margin="73.4,472,0,-17.4" VerticalAlignment="Top" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <ComboBox Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="1.4,6,0,0" VerticalAlignment="Top" Width="414" Grid.Column="1" Height="21"/>
+        <Label x:Name="TEST_TEXT_LEFT" Content="Test" HorizontalAlignment="Left" Margin="23,500,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Test_combobox" Grid.Column="1" HorizontalAlignment="Left" Margin="2.4,503,0,0" VerticalAlignment="Top" Width="72" SelectionChanged="Test_combobox_SelectionChanged"/>
+
+    </Grid>
+</Window>
